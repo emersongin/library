@@ -24,4 +24,12 @@ final class LibraryUser {
   public function getId(): string {
     return $this->id;
   }
+
+  public function toArray(): array {
+    return [
+      'id' => $this->id,
+      'name' => $this->name,
+      'cpf' => $this->cpf
+    ];
+  }
 }
